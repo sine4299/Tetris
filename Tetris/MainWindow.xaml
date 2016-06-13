@@ -1,0 +1,22 @@
+﻿<Window x:Name="Tetris" x:Class="Tetris.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tetris"
+        mc:Ignorable="d"
+        Title="Tetris" Height="526.357" Width="558.915">
+    <Grid>
+        <Menu x:Name="menu" Width="554" Margin="-3,0,0,465">
+            <MenuItem x:Name="FileMenuItem" Header="    File" Height="22" Width="55">
+                <MenuItem x:Name="PlayMenu" Header="Play" Click="PlayMenu_Click"/>
+                <MenuItem x:Name="QuiteMenu" Header="Quit" Click="QuiteMenu_Click"/>
+            </MenuItem>
+            <MenuItem Header="Help"/>
+        </Menu>
+        <Canvas x:Name="GamePlayBounds" Background="Transparent" Width="381" HorizontalAlignment="Left" Height="465" VerticalAlignment="Bottom">
+            
+        </Canvas>
+        <Canvas x:Name="ScoreBoardBounds" Background="Crimson" Width="170" HorizontalAlignment="Right" Height="465" VerticalAlignment="Bottom"></Canvas>
+    </Grid>
+</Window>
